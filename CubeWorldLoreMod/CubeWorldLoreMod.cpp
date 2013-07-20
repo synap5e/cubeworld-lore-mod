@@ -159,6 +159,7 @@ bool dev_mode = false;
 
 regex whitespace_strip("( +)|(\t+)");
 void load_xml(){
+	lore_map.clear();
 	pugi::xml_document doc;
 	pugi::xml_parse_result result = doc.load_file("./lore.xml");
 
