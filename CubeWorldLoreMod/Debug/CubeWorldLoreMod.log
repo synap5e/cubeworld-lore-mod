@@ -1,30 +1,30 @@
-﻿Build started 20/7/2013 8:03:38 PM.
-     1>Project "C:\Users\Simon\documents\visual studio 2013\Projects\CubeWorldLoreMod\CubeWorldLoreMod\CubeWorldLoreMod.vcxproj" on node 2 (Build target(s)).
+﻿Build started 20/7/2013 9:24:20 PM.
+     1>Project "C:\Users\Simon\programming\cubeworld-lore-mod\CubeWorldLoreMod\CubeWorldLoreMod.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./headers /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D CUBEWORLDLOREMOD_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CubeWorldLoreMod.cpp
          CubeWorldLoreMod.cpp
-     1>c:\users\simon\documents\visual studio 2013\projects\cubeworldloremod\cubeworldloremod\cubeworldloremod.cpp(61): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\simon\programming\cubeworld-lore-mod\cubeworldloremod\cubeworldloremod.cpp(61): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(575) : see declaration of 'wcstombs'
-     1>c:\users\simon\documents\visual studio 2013\projects\cubeworldloremod\cubeworldloremod\cubeworldloremod.cpp(62): warning C4996: '_strlwr': This function or variable may be unsafe. Consider using _strlwr_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\simon\programming\cubeworld-lore-mod\cubeworldloremod\cubeworldloremod.cpp(62): warning C4996: '_strlwr': This function or variable may be unsafe. Consider using _strlwr_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(175) : see declaration of '_strlwr'
-     1>c:\users\simon\documents\visual studio 2013\projects\cubeworldloremod\cubeworldloremod\cubeworldloremod.cpp(258): warning C4244: 'argument' : conversion from 'QWORD' to 'unsigned int', possible loss of data
-     1>c:\users\simon\documents\visual studio 2013\projects\cubeworldloremod\cubeworldloremod\cubeworldloremod.cpp(260): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\simon\programming\cubeworld-lore-mod\cubeworldloremod\cubeworldloremod.cpp(259): warning C4244: 'argument' : conversion from 'QWORD' to 'unsigned int', possible loss of data
+     1>c:\users\simon\programming\cubeworld-lore-mod\cubeworldloremod\cubeworldloremod.cpp(261): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(294) : see declaration of 'wcscpy'
-     1>c:\users\simon\documents\visual studio 2013\projects\cubeworldloremod\cubeworldloremod\cubeworldloremod.cpp(263): warning C4996: 'swprintf': swprintf has been changed to conform with the ISO C standard, adding an extra character count parameter. To use traditional Microsoft swprintf, set _CRT_NON_CONFORMING_SWPRINTFS.
+     1>c:\users\simon\programming\cubeworld-lore-mod\cubeworldloremod\cubeworldloremod.cpp(264): warning C4996: 'swprintf': swprintf has been changed to conform with the ISO C standard, adding an extra character count parameter. To use traditional Microsoft swprintf, set _CRT_NON_CONFORMING_SWPRINTFS.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\swprintf.inl(85) : see declaration of 'swprintf'
-     1>c:\users\simon\documents\visual studio 2013\projects\cubeworldloremod\cubeworldloremod\cubeworldloremod.cpp(266): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\simon\programming\cubeworld-lore-mod\cubeworldloremod\cubeworldloremod.cpp(267): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(294) : see declaration of 'wcscpy'
-     1>c:\users\simon\documents\visual studio 2013\projects\cubeworldloremod\cubeworldloremod\cubeworldloremod.cpp(217): warning C4731: 'on_examine_prompt' : frame pointer register 'ebp' modified by inline assembly code
-     1>c:\users\simon\documents\visual studio 2013\projects\cubeworldloremod\cubeworldloremod\cubeworldloremod.cpp(276): warning C4731: 'on_push_nothing_special' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\users\simon\programming\cubeworld-lore-mod\cubeworldloremod\cubeworldloremod.cpp(218): warning C4731: 'on_examine_prompt' : frame pointer register 'ebp' modified by inline assembly code
+     1>c:\users\simon\programming\cubeworld-lore-mod\cubeworldloremod\cubeworldloremod.cpp(277): warning C4731: 'on_push_nothing_special' : frame pointer register 'ebp' modified by inline assembly code
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Program Files (x86)\Cube World\CubeWorldLoreMod.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Program Files (x86)\Cube World\CubeWorldLoreMod.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Program Files (x86)\Cube World\CubeWorldLoreMod.lib" /MACHINE:X86 /DLL Debug\CubeWorldLoreMod.res
          Debug\pugixml.obj
          Debug\CubeWorldLoreMod.obj
          Debug\stdafx.obj
          CubeWorldLoreMod.vcxproj -> C:\Program Files (x86)\Cube World\CubeWorldLoreMod.dll
-     1>Done Building Project "C:\Users\Simon\documents\visual studio 2013\Projects\CubeWorldLoreMod\CubeWorldLoreMod\CubeWorldLoreMod.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\Simon\programming\cubeworld-lore-mod\CubeWorldLoreMod\CubeWorldLoreMod.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:10.49
+Time Elapsed 00:00:01.85
