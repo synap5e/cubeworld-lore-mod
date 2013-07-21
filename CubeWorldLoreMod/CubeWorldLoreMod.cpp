@@ -195,18 +195,13 @@ void load_xml(){
 
 
 void on_examine_prompt(){
+	last_id = *((byte*) p_item_base);
 
 	QWORD item_x = *((QWORD*) p_item_base + 0x1);
 	QWORD item_z = *((QWORD*) p_item_base + 0x2);
 	QWORD item_y = *((QWORD*) p_item_base + 0x3);
+	last_item_hash = (item_x*31) + (item_z*31) + (item_y*31) + (last_id*31);
 
-	QWORD item_hash = item_x ^ item_z ^ item_y;
-	if (item_hash != last_item_hash)
-	{
-		seq = 0;
-		last_item_hash = item_hash;
-		last_id = *((byte*) p_item_base);
-	}
 	fflush(stdout);
 	__asm
 	{
@@ -246,7 +241,10 @@ __declspec(naked) void examine_prompt_asm(){
 }
 
 void on_push_nothing_special(){
-	load_xml();
+	if (dev_mode){
+		load_xml();
+	}
+	
 
 	printf("Item: %d\n", last_id);
 	if (dialogue){
