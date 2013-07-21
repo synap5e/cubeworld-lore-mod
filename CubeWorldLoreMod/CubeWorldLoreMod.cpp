@@ -157,7 +157,6 @@ map < int, vector<wchar_t*>> lore_map;
 bool dev_mode = false;
 
 
-regex whitespace_strip("( +)|(\t+)");
 void load_xml(){
 	lore_map.clear();
 	pugi::xml_document doc;
@@ -178,12 +177,10 @@ void load_xml(){
 		for (pugi::xml_node text_node = item.child("text"); text_node; text_node = text_node.next_sibling("text"))
 		{
 			const char* text = text_node.text().get();
-			string stripped = regex_replace(text, whitespace_strip, " ");
-			printf("'%s' -> '%s'\n", text, stripped);
 
 			size_t t;
 			wchar_t* w_text = new wchar_t[1024];
-			mbstowcs_s(&t, w_text, 1024, stripped.c_str(), 1024);
+			mbstowcs_s(&t, w_text, 1024, text, 1024);
 						
 			lore_map[id].push_back(w_text);
 			count++;
@@ -202,7 +199,6 @@ void on_examine_prompt(){
 	QWORD item_y = *((QWORD*) p_item_base + 0x3);
 	last_item_hash = (item_x*31) + (item_z*31) + (item_y*31) + (last_id*31);
 
-	fflush(stdout);
 	__asm
 	{
 			mov eax, [oldeax]
@@ -306,6 +302,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 	{
 
 		//CreateDebugConsole();
+		//freopen("lore_mod.log", "a", stdout);
 
 		if (push_nothing_special){
 			push_nothing_special += 0x0A;
